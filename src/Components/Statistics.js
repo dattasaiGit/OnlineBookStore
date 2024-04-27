@@ -10,16 +10,7 @@ function AdminStatistics() {
     // setOrders(fetchedOrders);
   }, []);
 
-  function calculateStatistics() {
-    // Handle cases where there might be no orders
-    if (orders.length === 0) {
-      return {
-        totalOrders: 0,
-        totalRevenue: 0,
-        mostPopularTitle: "",
-        mostPopularQuantity: 0
-      };
-    }
+ 
 
     let totalOrders = 12;
     let totalRevenue = 6750;
@@ -54,6 +45,6 @@ function AdminStatistics() {
       <p>Most Popular Title: Come! Let's Run (Sold: 3)</p> &nbsp;&nbsp;&nbsp;
     </div>
   );
-}
+
 
 export default AdminStatistics;
