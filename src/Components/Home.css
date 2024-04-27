@@ -60,19 +60,19 @@ header p {
   list-style: none;
   padding: 0;
   margin: auto;
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 
 .book-item {
   width: 250px;
-  margin: 0 20px 20px;
+  margin: 20px;
   padding: 20px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center; /* Center text */
+  text-align: center;
+  justify-content: center;
 }
 
 .book-item img {
@@ -134,4 +134,8 @@ header p {
 .book-list li {
   font-size: 1.1rem;
   margin-bottom: 10px;
+}
+
+.jkl{
+  text-align: left;
 }

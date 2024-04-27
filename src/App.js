@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import NavBar from './Components/Navbar';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Components/Home';
 import About from './Components/About';
 import Login from './Components/Login';
@@ -22,11 +21,6 @@ import FeedbackForm from './Components/Feedback';
 import AdminBooks from './Components/AdminBooks'
  
 function App() {
-  const [cart, setCart] = useState([]);
-
-  const addToCart = (book) => {
-    setCart([...cart, book]);
-  };
   return (
     <div className="App">
       <style>

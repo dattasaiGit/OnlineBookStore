@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import setShowNavber2 from './ShowNavbar2'
 
 export default function ShowNavBar({ children }) {
   const location = useLocation();

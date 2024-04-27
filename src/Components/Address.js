@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Payment from './Payment';
 import Navbar2 from './Navbar2';
 
 const Address = ({ totalCartPrice }) => {

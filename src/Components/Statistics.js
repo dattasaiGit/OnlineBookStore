@@ -1,9 +1,9 @@
 import React from 'react';
 import Navbar3 from './Navbar3';
-import Footer from './Footer';
+
 
 function AdminStatistics() {
-  const [orders, setOrders] = React.useState([]); // Assuming you have a way to get orders data
+  const [orders, ] = React.useState([]); // Assuming you have a way to get orders data
 
   React.useEffect(() => {
     // Fetch order data from your data source (e.g., API call)
@@ -44,7 +44,6 @@ function AdminStatistics() {
     };
   }
 
-  const stats = calculateStatistics();
 
   return (
     <div>

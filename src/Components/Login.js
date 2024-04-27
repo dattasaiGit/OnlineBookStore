@@ -9,7 +9,7 @@ import config from '../config';
 const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const [userRole, setUserRole] = useState(null);
+  const [, setUserRole] = useState(null);
   const navigate = useNavigate();
 
   useEffect(() => {

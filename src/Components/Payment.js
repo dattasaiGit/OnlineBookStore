@@ -1,12 +1,9 @@
 import React, { useState } from 'react';
-import Razorpay from 'razorpay-checkout';
 
 const Payment = () => {
     const [amount, setAmount] = useState('');
 
-    const handleAmountChange = (e) => {
-        setAmount(e.target.value);
-    };
+   
 
     const handlePayment = () => {
         if (amount === undefined || amount === '') {

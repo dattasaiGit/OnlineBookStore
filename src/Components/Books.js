@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Books.css';
 import Navbar2 from './Navbar2';
-import Cart from './Cart'; 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Footer from './Footer';
@@ -10,7 +9,6 @@ import config from '../config'
 
 const Books = () => {
   const [books, setBooks] = useState([]);
-  const [cart, setCart] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedGenre, setSelectedGenre] = useState('');
   const [selectedRating, setSelectedRating] = useState(0); // State to track selected rating

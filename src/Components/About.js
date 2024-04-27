@@ -1,7 +1,6 @@
 import React from 'react';
 import './About.css';
 import NavBar from './Navbar';
-import config from '../config';
 
 function About() {
   return (
