@@ -9,6 +9,7 @@ import config from '../config'
 
 const Books = () => {
   const [books, setBooks] = useState([]);
+  const [, setCart] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedGenre, setSelectedGenre] = useState('');
   const [selectedRating, setSelectedRating] = useState(0); // State to track selected rating
