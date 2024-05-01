@@ -8,9 +8,8 @@ const CustomerHome = () => {
     <div>
     <Navbar2/>
     <div className="homepage">
-      <header>
+      
         <h1>Welcome to Our Online Bookstore</h1>
-      </header>
       <main>
         <section className="featured-books">
           <h2>Featured Books</h2>

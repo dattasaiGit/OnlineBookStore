@@ -12,7 +12,7 @@ const Books = () => {
   const [, setCart] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedGenre, setSelectedGenre] = useState('');
-  const [selectedRating, setSelectedRating] = useState(0); // State to track selected rating
+  const [selectedRating, setSelectedRating] = useState(0); 
 
   useEffect(() => {
     const fetchBooks = async () => {
@@ -46,10 +46,8 @@ const Books = () => {
     console.log('Search button clicked');
   };
 
-  // Function to handle rating
   const handleRating = async (bookId) => {
     try {
-      // Perform action to submit rating to backend
       await axios.post(`${config.url}/rateBook`, { bookId, rating: selectedRating });
       toast.success(`Rating ${selectedRating} submitted for book ID: ${bookId}`);
     } catch (error) {
@@ -57,7 +55,6 @@ const Books = () => {
     }
   };
 
-  // Function to handle star click event
   const handleStarClick = (rating) => {
     setSelectedRating(rating);
   };

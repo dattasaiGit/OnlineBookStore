@@ -13,7 +13,6 @@ const Navbar3 = () => {
         <li><Link to="/users">Users</Link></li> 
         <li><Link to="/adminbooks">Books</Link></li> 
         <li><Link to="/orders">Orders</Link></li>
-        <li><Link to="/statistics">Statistics</Link></li>
         <li><Link to="/home">Logout</Link></li>
       </ul>
       </ShowNavBar>

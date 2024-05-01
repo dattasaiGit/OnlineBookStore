@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { FaUser, FaLock } from 'react-icons/fa';
 import './Login.css';
 import { useNavigate, Link } from 'react-router-dom';
@@ -12,33 +12,6 @@ const Login = () => {
   const [, setUserRole] = useState(null);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    let timeoutId;
-
-    const resetTimeout = () => {
-      clearTimeout(timeoutId);
-      timeoutId = setTimeout(() => {
-        
-        console.log('User session timed out');
-        setUserRole(null);
-        navigate('/login');
-        alert('Session expired due to inactivity. Please login again.');
-      }, 30*100); 
-    };
-
-    const clearEvents = () => {
-      clearTimeout(timeoutId);
-      document.removeEventListener('mousemove', resetTimeout);
-      document.removeEventListener('keydown', resetTimeout);
-    };
-
-    resetTimeout();
-
-    document.addEventListener('mousemove', resetTimeout);
-    document.addEventListener('keydown', resetTimeout);
-
-    return clearEvents;
-  }, [navigate]);
 
   const handleLogin = async (e) => {
     e.preventDefault();

@@ -12,7 +12,6 @@ import Books from './Components/Books';
 import Adminhome from './Components/adminhome';
 import AddBooks from './Components/AddBooks'
 import Orders from './Components/Orders';
-import Statistics from './Components/Statistics';
 import AdminUsers from './Components/AdminUsers';
 import ChangePassword from './Components/ChangePassword';
 import CustomerHome from './Components/CustomerHome';
@@ -42,7 +41,6 @@ function App() {
           <Route path="/admin-dashboard" element={<Adminhome />} />
           <Route path="/addbooks" element={<AddBooks />} />
           <Route path="/orders" element={<Orders />} />
-          <Route path="/statistics" element={<Statistics />} />
           <Route path="/CustomerHome" element={<CustomerHome />} />
           <Route path="/address" element={<Address />} />
           <Route path="/feedback" element={<FeedbackForm />} />

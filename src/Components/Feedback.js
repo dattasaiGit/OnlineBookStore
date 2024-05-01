@@ -16,8 +16,7 @@ const FeedbackForm = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch(`${config.url}/Feedback`, { // Assuming your server is configured to handle '/submit-feedback' route
-        method: 'POST',
+      const response = await fetch(`${config.url}/Feedback`, { 
         headers: {
           'Content-Type': 'application/json',
         },
@@ -84,9 +83,7 @@ const FeedbackForm = () => {
         </div>
       </div>
     </div>
-    <br></br>
-    <br></br>
-    <br></br>
+    <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
     <Footer/>
     </div>
   );

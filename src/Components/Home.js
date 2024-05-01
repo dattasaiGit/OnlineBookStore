@@ -65,8 +65,9 @@ function Home() {
         </section>
       </div>
       <br></br><br></br>
+      <div className='container'>
       <section className="featured-books">
-        <h2 className='jkl'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Featured Books</h2>
+        <h2 className='jkl'>Featured Books</h2>
         <ul className="book-list">
           {featuredBooks.map(book => (
             <li key={book.id} className="book-item">
@@ -80,7 +81,7 @@ function Home() {
       </section>
 
       <section className="bestsellers">
-        <h2 className='jkl'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bestsellers</h2>
+        <h2 className='jkl'>Bestsellers</h2>
         <ul className="book-list">
           {bestsellers.map(book => (
             <li key={book.id} className="book-item">
@@ -92,9 +93,9 @@ function Home() {
           ))}
         </ul>
       </section>
-
+<br></br>
       <section className="recommended-books">
-        <h2 className='jkl'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Recommended Books</h2>
+        <h2 className='jkl'>Recommended Books</h2>
         <ul className="book-list">
           {recommendedBooks.map(book => (
             <li key={book.id} className="book-item">
@@ -106,6 +107,7 @@ function Home() {
           ))}
         </ul>
       </section>
+      </div>
       </center>
     </div>
   );

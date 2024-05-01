@@ -53,7 +53,7 @@ header p {
 
 .new-arrivals {
   padding: 40px 0;
-  text-align: center; /* Center the text content */
+  text-align: center; 
 }
 
 .book-list {
@@ -137,5 +137,5 @@ header p {
 }
 
 .jkl{
-  text-align: left;
+  text-align: center;
 }
